@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>index</title>
+		<meta name="description" content="">
+		<meta name="author" content="wangle">
+	    <link rel="shortcut icon" href="/favicon.ico">
+		<script src="http://api.map.baidu.com/api?ak=CKMlG7cztyaUtOMxTOjCoI4H&v=2.0"></script>
+		<script type="text/javascript" src="map.js"></script>
+
+	</head>
+
+	<body>
+		<div> 
+			<ul style="position:absolute;right:0;;width:400px;list-style:decimal;">
+				<li>
+					使用百度地图
+				</li>
+				<li>
+					图可以根据输入框定位中心位置（如果是唯一的，中心点直接设置。 如果有个列表可以设置）。<input type="text" id="suggestId" size="20" value="百度" style="width:150px;" placeholder="请输入地址" />
+				</li>
+				<li>
+					地图可以放大缩小
+				</li>
+				<li>
+					在地图上可以用鼠标划定一个圈，能展示这个折线圈，保存到服务端，回传后再展示。<button id="btn1">点击此按钮，然后在地图上划线;按Esc或双击结束</button>
+				</li>
+				<li>
+					给一个地理坐标，可以在地图上加一个图层表示：
+					<input id="weidu" placeholder="纬度 ,如 116" /><input id="jingdu" placeholder="经度 ,如 39" />
+				</li>
+				<li>
+					能给一个地理坐标能计算是否在4的圈中的算法最好。请参看上面的画圈步骤，画圈后，点击地图上的点，地图会提示此点是否在画圈范围内
+				</li>
+				<li>
+				 
+				</li>
+			</ul>
+			
+			<!--百度地图容器-->
+		    <div style="width:697px;height:550px;border:#ccc solid 1px;" id="dituContent">
+		  	
+		    </div>
+		   
+			<!-- 操作结果 -->
+			<footer>
+				<div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:block;"> </div>
+			</footer>
+		</div>
+		<body>
+
+</body>
+ 
+</html>
